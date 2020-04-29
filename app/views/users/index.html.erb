@@ -12,6 +12,7 @@
           <li>
             <%= co.name %>
             in <%= co.country_name %>
+            | <%= link_to "Show ledger for #{co.name}", company_path(co) %>
           </li>
         <% end %>
       </ul>

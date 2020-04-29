@@ -45,7 +45,7 @@
         <td><%= teller.opening %></td>
         <td><%= teller.cash_in %></td>
         <td><%= teller.cash_out %></td>
-        <td><%= teller.company_name %></td>
+        <td><%= link_to teller.company_name, company_path(teller.company) %></td>
         <td><%= teller.country_name %></td>
         <td><%= link_to 'Show', teller %></td>
         <td><%= link_to 'Edit', edit_teller_path(teller) %></td>

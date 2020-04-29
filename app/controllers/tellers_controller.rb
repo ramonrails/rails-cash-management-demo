@@ -4,6 +4,7 @@ class TellersController < ApplicationController
   # GET /tellers
   # GET /tellers.json
   def index
+    # teller transactions for the current user (student) only
     @tellers = current_user.tellers
   end
 
@@ -69,6 +70,13 @@ class TellersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def teller_params
-      params.require(:teller).permit(:date, :opening, :cash_in, :cash_out, :user_id, :company_id, :country_id, :year, :month)
+      # allow :year and :month to save the :date
+      # :date will allow us to sort and search quickly.
+      # separate year/month fields will need extra logic.
+      params.require(:teller).permit(
+        :date, :opening, :cash_in, :cash_out,
+        :user_id, :company_id, :country_id,
+        :year, :month
+      )
     end
 end

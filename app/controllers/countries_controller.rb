@@ -1,9 +1,11 @@
 class CountriesController < ApplicationController
+  # just setup country record for action
   before_action :set_country, only: [:show, :edit, :update, :destroy]
 
   # GET /countries
   # GET /countries.json
   def index
+    # countries are common. not specific to a user or student
     @countries = Country.all
   end
 
