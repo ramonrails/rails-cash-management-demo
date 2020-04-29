@@ -3,6 +3,10 @@
 Quick demonstration of multiple relations among tables in rails
 This can be done wthin an hour.
 
+## ER diagram
+
+![ER](https://github.com/ramonrails/rails-cash-management-demo/blob/master/public/images/cashmanagement%20er%20diagram.png)
+
 ## screen 1
 
 ![Screen1](https://github.com/ramonrails/rails-cash-management-demo/blob/master/public/images/Screenshot%202020-04-29%20at%202.43.24%20PM.png)
