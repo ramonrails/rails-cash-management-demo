@@ -1,0 +1,22 @@
+<h1>Users</h1>
+<ul>
+  <% @users.each do |user| %>
+    <li>
+      <%= user.email %>
+      (<%= user.roles.take&.name %>)
+
+      <% if user.companies.count.positive? %>
+      <ul>
+        <b>Companies</b>
+        <% user.companies.find_each do |co| %>
+          <li>
+            <%= co.name %>
+            in <%= co.country_name %>
+          </li>
+        <% end %>
+      </ul>
+      <% end %>
+
+    </li>
+  <% end %>
+</ul>

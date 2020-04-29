@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @teller.date %>
+</p>
+
+<p>
+  <strong>Opening:</strong>
+  <%= @teller.opening %>
+</p>
+
+<p>
+  <strong>Cash in:</strong>
+  <%= @teller.cash_in %>
+</p>
+
+<p>
+  <strong>Cash out:</strong>
+  <%= @teller.cash_out %>
+</p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @teller.company_name %>
+  | <%= link_to 'Show company ledger', company_path(@teller.company), class: "btn btn-secondary" %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @teller.country_name %>
+</p>
+
+<%= link_to 'Edit', edit_teller_path(@teller) %> |
+<%= link_to 'Back', tellers_path %>
