@@ -1,24 +1,20 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Quick demonstration of multiple relations among tables in rails
+This can be done wthin an hour.
 
-Things you may want to cover:
+## screen 1
 
-* Ruby version
+![Screen1](https://github.com/ramonrails/rails-cash-management-demo/blob/master/public/images/Screenshot%202020-04-29%20at%202.43.24%20PM.png)
 
-* System dependencies
+## screen 2
 
-* Configuration
+![Screen 2](https://github.com/ramonrails/rails-cash-management-demo/blob/master/public/images/Screenshot%202020-04-29%20at%202.43.42%20PM.png)
 
-* Database creation
+## screen 3
 
-* Database initialization
+![Screen 3](https://github.com/ramonrails/rails-cash-management-demo/blob/master/public/images/Screenshot%202020-04-29%20at%202.43.48%20PM.png)
 
-* How to run the test suite
+## screen 4
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+![Screen 4](https://github.com/ramonrails/rails-cash-management-demo/blob/master/public/images/Screenshot%202020-04-29%20at%202.43.57%20PM.png)
