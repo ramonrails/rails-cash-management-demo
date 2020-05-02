@@ -73,6 +73,6 @@ class CompaniesController < ApplicationController
     # Only allow a list of trusted parameters through.
     def company_params
       # allow company and user association to be accepted
-      params.require(:company).permit(:name, :country_id, :user_id)
+      params.require(:company).permit(:name, :country_id, :user_id, :country_name)
     end
 end
