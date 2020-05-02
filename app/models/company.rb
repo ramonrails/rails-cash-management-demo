@@ -4,6 +4,10 @@ class Company < ApplicationRecord
   # quickly fetch all transactions for this company
   # company.tellers
   has_many :tellers
+  # additional associations to roles and multipe users
+  has_many :users_roles
+  has_many :users, through: :users_roles
+  has_many :roles, through: :users_roles
 
   # country_name works
   delegate :name, to: :country, prefix: true

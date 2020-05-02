@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_29_074719) do
+ActiveRecord::Schema.define(version: 2020_05_02_115542) do
 
   create_table "companies", force: :cascade do |t|
     t.string "name"
@@ -75,6 +75,8 @@ ActiveRecord::Schema.define(version: 2020_04_29_074719) do
   create_table "users_roles", id: false, force: :cascade do |t|
     t.integer "user_id"
     t.integer "role_id"
+    t.integer "company_id"
+    t.index ["company_id"], name: "index_users_roles_on_company_id"
     t.index ["role_id"], name: "index_users_roles_on_role_id"
     t.index ["user_id", "role_id"], name: "index_users_roles_on_user_id_and_role_id"
     t.index ["user_id"], name: "index_users_roles_on_user_id"
